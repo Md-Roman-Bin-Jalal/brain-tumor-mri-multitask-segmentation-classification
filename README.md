@@ -1,6 +1,8 @@
 
 # Brain Tumor MRI Image Classification and Segmentation
 
+**[Read the full paper (PDF)](./paper.pdf)**
+
 Multi-task deep learning pipeline for the BRISC 2025 brain tumor MRI dataset. This project implements and compares:
 
 1. U-Net (Segmentation)
@@ -83,11 +85,31 @@ Open `main.ipynb` and run all cells in order. The notebook will:
 ---
 
 ## Outputs (Not Tracked by Git)
-- Best model weights: `*_best.h5` (not included)
-- Figures: PNGs in `figures/` (included)
-- Paper/report: `paper.pdf` (if present)
 
 > If you wish to version large files (e.g., model weights), use Git LFS.
+
+## Related Paper
+
+### Title
+Brain Tumor MRI Image Classification and Segmentation Using Deep Learning
+
+### Authors
+*Author names as listed in the paper*
+
+### Abstract
+We present a reproducible multi-task deep learning
+approach for brain tumor MRI that jointly performs binary
+tumor segmentation and four-class subtype classification on the
+BRISC 2025 dataset. We evaluate a baseline U-Net, an attention-
+augmented variant, a standalone classifier, and a shared- encoder
+joint model, reporting Dice, IoU, pixel accuracy, and classification
+F1/accuracy metrics. Attention consistently refines lesion bound-
+aries; the joint model maintains strong classification performance
+with a modest segmentation trade-off, offering an efficient single-
+checkpoint solution for deployment.
+
+### Paper Access
+The full paper is included in this repository as [`paper.pdf`](./paper.pdf). Please refer to it for a comprehensive description of the methodology, experiments, and results.
 
 ---
 ## Customization
