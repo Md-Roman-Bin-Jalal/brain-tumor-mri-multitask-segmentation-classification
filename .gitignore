@@ -1,0 +1,78 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Logs and temp
+*.log
+logs/
+/tmp/
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Model weights / large artifacts (recommend Git LFS if you really need to version them)
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+# model_metrics.json is tracked for paper reproducibility
+model_metrics_summary.csv
+
+# Training outputs
+*.png
+!figures/*.png
+
+# Kaggle / runtime specific
+kaggle/ working/
+.kaggle/
+
+# Data directories (adjust if you add a local copy of dataset)
+data/
+inputs/
+/raw_data/
+
+# Cache
+.cache/
+__cache__/
+
+# TensorFlow / Keras
+checkpoint/
+
+# Python profiling
+.prof
+
+# Misc
+*.tar
+*.tar.gz
+*.zip
+
+# Exclude LaTeX source files
+*.tex
+
+# Exclude JSON files
+*.json
